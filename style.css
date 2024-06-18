@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    padding: 3% 6% 0;
+    font-family: "Poppins",sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#huddleHead img{
+    width: 200px;
+    }
+#sectionHuddle{
+    display: flex;
+    align-items: center;
+    gap: 4%;
+}
+.imgHuddle{
+    width: 55%;
+}
+.imgHuddle img{
+    width: 90%;
+}
+.contentHuddle{
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+.headingPrimary{
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+.descriptionPrimary{
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(231 215 255);
+    line-height: 24px;
+}
+.buttonHuddle{
+    text-decoration: none;
+    width: fit-content;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    font-size: 16px;
+    padding: 12px 52px;
+    border-radius: 26px;
+    box-shadow: 6px 6px 6px 2px rgb(0.1,0.1,0.1,0.265);
+}
+.buttonHuddle:hover{
+    color: #fff;
+    background-color:  hsl(300, 69%, 71%);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+#footerHuddle{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 0 6% ;
+}
+.Icons{
+    display: flex;
+    gap: 10px;
+}
+.footerIcons{
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 8px;
+    border-radius: 50px;
+}
+.footerIcons:hover{
+    cursor: pointer;
+    color: hsl(300, 69%, 71%);
+    transition: 0.3s all;
+    border: 3px solid hsl(300, 69%, 71%);
+}
+.iconFacebook{
+    width: 44px;
+    height: 44px;
+    border-radius: 25px;
+    color: #674baf;
+    background-color: white;
+}
+.iconFacebook:hover{
+    background-color: hsl(300, 69%, 71%);
+    transition: 0.3s all;
+    cursor: pointer;
+}
+/*********************************/
+/**********RESPONSIVE*************/
+/**************************************/
+
+@media (max-width:76.75rem){
+    .headingPrimary {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 42px;
+    }
+    .descriptionPrimary {
+        font-weight: 300;
+        font-size: 15px;
+        color: rgb(231 215 255);
+        line-height: 24px;
+    }
+    .buttonHuddle {
+        padding: 10px 56px;
+    }
+}
+@media (max-width:64rem){
+    body{
+        gap: 75px;
+    }
+    .headingPrimary {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 38px;
+    }
+    .descriptionPrimary {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .buttonHuddle {
+        padding: 8px 50px;
+    }
+}
+@media (max-width:57.5rem){
+    .contentHuddle{
+        width: 50%;
+    }
+    .headingPrimary {
+        font-size: 1.6rem;
+    }
+    .descriptionPrimary {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .attribution{
+        width: 63%;
+        font-size: 11px;
+    }
+}
+@media (max-width:42rem){
+    body{
+        padding: 6% 6%;
+        background-image:url("huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg") ;
+    }
+    #huddleHead{
+        padding: 0 5%;
+    }
+    #huddleHead img {
+        width: 45%;
+    }
+    #sectionHuddle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+        padding: 0 2%;
+    }
+    .imgHuddle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+    }
+    .imgHuddle img {
+        width: 100%;
+    }
+    .contentHuddle{
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+    .headingPrimary {
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 46px;
+    }
+    .headingPrimary span{
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+    .descriptionPrimary span{
+        width: fit-content;
+        display: block;
+        margin: auto;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .buttonHuddle {
+        padding: 10px 80px;
+    }
+    #footerHuddle {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 25px;
+        align-items: center;
+    }
+    .Icons {
+        gap: 15px;
+    }
+    }
+@media (max-width:35rem){
+    body{
+        padding: 6% 6%;
+    }
+    #huddleHead{
+        padding: 0 5%;
+    }
+    #huddleHead img {
+        width: 45%;
+    }
+    #sectionHuddle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        padding: 0 2%;
+    }
+    .imgHuddle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+    }
+    .imgHuddle img {
+        width: 100%;
+    }
+    .contentHuddle{
+        width: 100%;
+        align-items: center;
+        gap: 16px;
+    }
+    .headingPrimary {
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 38px;
+    }
+    .headingPrimary span{
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+    .descriptionPrimary span {
+        width: fit-content;
+        display: block;
+        margin: auto;
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .buttonHuddle{
+        padding: 8px 74px;
+    }
+    #footerHuddle{
+        justify-content: center;
+    }
+    .footerIcons{
+        width: 20px;
+        height: 20px;
+    }
+    .iconFacebook {
+        width: 39px;
+        height: 39px;
+    }
+}
+@media (max-width:24rem){
+    body{
+        gap: 30px;
+    }
+    #sectionHuddle{
+        margin-top: 10px;
+    }
+    .imgHuddle{
+        width: 80%;
+    }
+    .imgHuddle img{
+        width: 100%;
+    }
+    .headingPrimary {
+        font-size: 1.2rem;
+        line-height: 32px;
+    }
+    .descriptionPrimary span {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .buttonHuddle {
+        padding: 8px 66px;
+    }
+}
+@media (max-width:21rem){
+    .descriptionPrimary span {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
